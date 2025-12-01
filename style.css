@@ -8,8 +8,13 @@ body {
     padding: 0;
     margin: 0;
     font-family: "Cabin", sans-serif;
+    padding-top: 75px;
 }
 
+html {
+    scroll-behavior: smooth; 
+    scroll-padding-top: 90px; 
+}
 header {
     position: fixed;
     top: 0;
@@ -20,6 +25,7 @@ header {
     align-items: center;
     padding: 15px 15px;
     background-color: #2d2f34;
+    z-index: 1000;
 }
 
 li,
@@ -58,7 +64,7 @@ section {
     max-width: 60rem;
     margin: 0 auto;
     min-height: calc(100vh - 10vh);
-    padding: 13rem 2rem;
+    padding: 16rem 2rem 13rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,11 +108,12 @@ section {
 
 .section_cards {
     max-width: 1200px;
-    margin: -1.5rem auto 3rem;
-    padding: 2rem 1rem;
+    margin: 0rem auto 3rem;
+    padding: 6rem 1rem 2rem;
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    scroll-margin-top: 90px;
 }
 
 .card_a {
