@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Cabin", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 15px;
+    background-color: #2d2f34;
+}
+
+li,
+a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.logotipo {
+    height: 45px;
+    margin-right: auto;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.nav-links li a:hover {
+    color: #ffa500;
+}
+
+.section_apresentacao {
+    max-width: 60rem;
+    margin: 0 auto;
+    min-height: calc(100vh - 10vh);
+    padding: 13rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.apresentacao_titulo {
+    font-size: 36px;
+    margin: 24px 0 12px;
+}
+
+.apresentacao_texto {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.apresentacao_links {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    max-width: 600px;
+}
+
+.apresentacao_links_a {
+    display: inline-block;
+    background-color: #ffa500;
+    color: black;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.apresentacao_links_a:hover {
+    filter: brightness(0.95);
+    transform: translateY(-2px);
+}
+
+.section_cards {
+    max-width: 1200px;
+    margin: -1.5rem auto 3rem;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card_a {
+    color: black;
+    text-decoration: none;
+}
+
+.container .card:hover .card_a {
+    color: white;
+}
+
+.container {
+    width: 1150px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container .card {
+    position: relative;
+    padding: 10px;
+    width: 300px;
+    background-color: white;
+    margin: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.container .card:hover {
+    background-color: #ffa500;
+    color: white;
+    margin-top: 30px;
+}
+
+@media (max-width: 800px) {
+
+    li,
+    a {
+        font-size: 12px;
+    }
+
+    .logotipo {
+        height: 30px;
+        margin-right: auto;
+    }
+}
