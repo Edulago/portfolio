@@ -11,10 +11,14 @@ body {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 20px 15px;
+    padding: 0 15px;
     background-color: #2d2f34;
 }
 
